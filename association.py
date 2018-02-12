@@ -44,11 +44,11 @@ class Software:
 
 class Computer:
 
-    def __init__(self):
+    def __init__(self,name,manufacturer,location):
 
-        self.name = 'Usman-PC'
-        self.manufacturer = 'Dell'
-        self.location = 'Karachi'
+        self.name = name
+        self.manufacturer = manufacturer
+        self.location = location
         self.clasHadw = Hardware()
         self.clasSoft = Software()
 
@@ -86,7 +86,7 @@ class Computer:
 
 
 
-comp = Computer()
+comp = Computer('Usman-PC','DEll','Karachi')
 
 comp.clasHadw.show_hardware('Lan Card','Feb 5')
 comp.clasHadw.show_hardware('Graphic Card','Jan 18')

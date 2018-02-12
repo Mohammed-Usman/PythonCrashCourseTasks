@@ -16,7 +16,7 @@ class User:
         print('Hello', self.first_name, '\n')
 
 
-first_person = User('Muhammad', 'Usman', 22, 'M')
+'''first_person = User('Muhammad', 'Usman', 22, 'M')
 second_person = User('Hassan', 'ALi', 18, 'M')
 third_person = User('Zohaib', 'Farooqi', 42, 'M')
 
@@ -27,7 +27,7 @@ second_person.describe_user()
 second_person.greet_user()
 
 third_person.describe_user()
-third_person.greet_user()
+third_person.greet_user()'''
 
 
 class Privileges():
@@ -39,13 +39,15 @@ class Privileges():
             print('Admin', priv)
 
 
+'''priv_obj = Privileges()
+priv_obj.show_privileges()'''
+
+
 class Administrator(User):
+
     def __init__(self, first_name, last_name, age, gender):
+
         super().__init__(first_name, last_name, age, gender)
         self.privl = Privileges()
 
 
-admin = Administrator('Zahid', 'Naseem', 23, 'Male')
-admin.privl.show_privileges()
-admin.describe_user()
-admin.greet_user()
