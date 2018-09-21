@@ -21,6 +21,7 @@ class Ice_Cream_Stand(Resturant):
         self.flavors=['vanila','chocolate','strawberry','melon','fanta']
 
     def display_flavors(self):
+        print(self.resturant_name)
         for flv in self.flavors:
             print('Flavors are: ',flv)
 
